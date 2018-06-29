@@ -1,0 +1,1 @@
+export const GET_TOURS_API_URL = 'https://api.myjson.com/bins/oivjj';
