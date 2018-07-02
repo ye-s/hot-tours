@@ -8,7 +8,7 @@ const TourDetailsWrapper = style.div`
     width: 100%;
     box-sizing: border-box;
     order: 3;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         max-width: 238px;
         height: 238px;
         border-left: 1px solid #f2f2f2;
@@ -37,7 +37,7 @@ const PriceWrapper = style.div`
         margin-top: 0;
         margin-bottom: 5px;
     }
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         width: 238px;
         padding-right: 20px;
         margin-top: 20px;
@@ -59,7 +59,7 @@ const DatesWrapper = style.div`
     flex-direction: row;
     padding: 3vw;
     justify-content: space-between;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin: 20px 20px 0 20px;
         padding: 10px;
     }
@@ -76,7 +76,7 @@ const DatesBlock = style.div`
     div {
         text-align: left;
     }
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-right: 16px;
     }
 `;
@@ -87,7 +87,7 @@ const SeatsBlock = style(DatesBlock)`
     div {
         text-align: right;
     }
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         // margin-left: 58px;
         margin-right: 14px;
     }
@@ -110,7 +110,7 @@ const Button = style.div`
     box-shadow:none;
     border-color:transparent;
     text-align: center;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin: 27px auto;
         width: 200px;
     }

@@ -30,7 +30,7 @@ const DayPickerWrapper = style.div`
         margin-top: 9px;
         margin-left: 15px;
     }
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-bottom: 16px;
         height: 276px;
         width: 260px;
@@ -50,7 +50,7 @@ const DayPickerTitle = style.div`
     padding-left: 7vw;
     padding-top: 3vh;
     text-align: left;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         padding-left: 16px;
         padding-top: 16px;
     }

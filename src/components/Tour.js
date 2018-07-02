@@ -13,7 +13,7 @@ import style from 'styled-components';
 //     height: 100%;
 //     width: 100%;
 //     box-sizing: border-box;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         margin: 0 0 16px 16px;
 //         max-width: 842px;
 //     }
@@ -24,7 +24,7 @@ const TourWrapper = style.div`
     display: flex;
     flex-direction: column;
     background: #fff;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         max-width: 476px;
         height: 476px;
         flex-direction: row;
@@ -68,7 +68,7 @@ const TourImageWrapper = style.div`
 //     width: 100%;
 //     background: ${(props) => props.background ? `url(${props.background})` + ' no-repeat center / cover': 'white'};
 //     box-sizing: border-box;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         height: 238px;
 //         width: 238px;
 //         // margin-right: 16px;
@@ -82,7 +82,7 @@ const TourImageWrapper = style.div`
 //     box-sizing: border-box;
 //     padding: 16px 18px 0px 22px;
 //     text-align: left;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         height: 238px;
 //         max-width: 370px;
 //         // margin-right: 16px;
@@ -109,7 +109,7 @@ const TourImageWrapper = style.div`
 //     height: 37vh;
 //     width: 100%;
 //     box-sizing: border-box;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         height: 238px;
 //         max-width: 238px;
 //         // margin-right: 16px;

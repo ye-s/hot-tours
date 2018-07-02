@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import DayPickerContainer from './DayPickerContainer';
+
 import style from 'styled-components';
-import DayPickerContainer from './DayPickerContainer'
+import UpcomingToursContainer from './UpcomingToursContainer';
 
 const FiltersWrapper = style.div`
     width: 100vw;
     box-sizing: border-box;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         max-width: 260px;
         margin-right: 16px;
     }
-`
+`;
 
 const FiltersTitle = style.div`
     margin-top: 25px;
@@ -24,7 +26,7 @@ const FiltersTitle = style.div`
     line-height: 20px;
     padding: 3.5vh 0 4vh 10vw;
     margin-bottom: 2vh;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-top: 0;
         padding: 17px 0 14px 24px;
         width: 260px;
@@ -35,14 +37,16 @@ const FiltersTitle = style.div`
             // margin: 17px 0 14px 24px;
         }
     }
-`
+`;
 
 export default class FiltersContainer extends Component {
     render () {
+        const showFiltered = this.state ? (this.state.isUpcomingFilterApplied || false) : false;
         return (
             <FiltersWrapper>
                 <FiltersTitle><span>Filter by:</span></FiltersTitle>
                 <DayPickerContainer/>
+                <UpcomingToursContainer/>
             </FiltersWrapper>
         );
     }

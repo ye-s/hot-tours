@@ -9,7 +9,7 @@ const SortByWrapper = style.div`
     // padding: 2vh 6vw 2vh 5vw;
     // text-align: left;
     // // position: relative;
-    // @media all and (min-width: 575px) {
+    // @media all and (min-width: 505px) {
     //     height: 238px;
     //     max-width: 370px;
     //     padding: 16px 18px 0px 22px;
@@ -66,7 +66,7 @@ const ItemsWrapper = style(TitlesWrapper)`
     // flex-direction: column;
     // align-items: left;
     margin-left: 22vw;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-left: 30px;
     }
 `;

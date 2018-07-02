@@ -5,6 +5,7 @@ export const TOURS_ARE_LOADING = 'TOURS_ARE_LOADING';
 export const TOURS_GOT_ERROR = 'TOURS_GOT_ERROR';
 export const TOURS_FETCH_SUCCESS = 'TOURS_FETCH_SUCCESS';
 export const DAY_PICKED = 'DAY_PICKED';
+export const SHOW_UPCOMING_TOURS = 'SHOW_UPCOMING_TOURS';
 
 export function toursAreLoading(bool) {
     return {
@@ -31,6 +32,12 @@ export function pickDay(day) {
     return {
         type: 'DAY_PICKED',
         day
+    };
+}
+
+export function showOnlyUpcomingTours() {
+    return {
+        type: 'SHOW_UPCOMING_TOURS'
     };
 }
 

@@ -14,10 +14,10 @@ import './App.css';
 const ToursSectionWrapper = style.div`
     display: flex;
     flex-direction: column;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         flex-direction: column;
     }
-    @media all and (min-width: 740) {
+    @media all and (min-width: 768px) {
         flex-direction: row;
     }
     @media all and (min-width: 1138px) {
@@ -29,7 +29,7 @@ const ContenWrapper = style.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-top: 5%;
     }
 `;

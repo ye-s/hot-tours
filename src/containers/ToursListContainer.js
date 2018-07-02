@@ -14,7 +14,7 @@ import style from 'styled-components';
 //     height: 100%;
 //     width: 100%;
 //     box-sizing: border-box;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         margin: 0 0 16px 16px;
 //         max-width: 842px;
 //     }
@@ -72,27 +72,9 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    // getTours: () => {
-    //     dispatch(getTours());
-    // }
     return bindActionCreators({
         getTours
     }, dispatch);
   };
 
-// const mapDispatchToProps = (dispatch) => {
-//     return dispatch(getTours);
-// };
-
-// const mapDispatchToProps = {
-//     getTours
-// };
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         getTours: bindActionCreators(getTours)
-//     }
-// };/
-
-//export default connect(mapStateToProps, mapDispatchToProps)(TourList);
 export default connect(mapStateToProps, mapDispatchToProps)(TourList);

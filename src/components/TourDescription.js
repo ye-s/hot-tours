@@ -9,7 +9,7 @@ const TourDescriptionWrapper = style.div`
     text-align: left;
     // position: relative;
     order: 2;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         border-top: 1px solid #f2f2f2;
         height: 238px;
         width: 476px;
@@ -33,7 +33,7 @@ const Description = style.div`
     font-size: 12px;
     letter-spacing: 0;
     line-height: 21px;
-    // @media all and (min-width: 575px) {
+    // @media all and (min-width: 505px) {
     //     border-top: 1px solid #f2f2f2;
     //     height: 238px;
     //     width: 476px;
@@ -84,7 +84,7 @@ const ItemsWrapper = style(TitlesWrapper)`
     // flex-direction: column;
     // align-items: left;
     margin-left: 22vw;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         margin-left: 30px;
     }
 `;

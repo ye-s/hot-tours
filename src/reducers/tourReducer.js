@@ -18,6 +18,11 @@ export function tourReducer(state = [], action) {
                 toursHasError: action.hasError
             });
         }
+        case types.SHOW_UPCOMING_TOURS: {
+            return Object.assign({}, state, {
+                isUpcomingFilterApplied: !state.isUpcomingFilterApplied
+            });
+        }
         default:
             return state;
     }

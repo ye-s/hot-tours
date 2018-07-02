@@ -9,7 +9,7 @@ import style from 'styled-components';
 //     // height: 436px;
 //     // width: 100%;
 //     // box-sizing: border-box;
-//     @media all and (min-width: 575px) {
+//     @media all and (min-width: 505px) {
 //         // max-width: 260px;
 //         // margin-right: 16px;
 //     }
@@ -17,7 +17,7 @@ import style from 'styled-components';
 const TourImageWrapper = style.div`
     position: relative;
     order: 1;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         height: 238px;
         width: 238px;
     }
@@ -67,7 +67,7 @@ const Image = style.div`
     width: 100%;
     background: ${(props) => props.background ? `url(${props.background})` + ' no-repeat center / cover': 'white'};
     box-sizing: border-box;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 505px) {
         height: 238px;
         width: 238px;
         // margin-right: 16px;
