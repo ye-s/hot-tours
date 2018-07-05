@@ -1,11 +1,11 @@
 import * as configs from '../configs';
-import moment from 'moment';
 
 export const TOURS_ARE_LOADING = 'TOURS_ARE_LOADING';
 export const TOURS_GOT_ERROR = 'TOURS_GOT_ERROR';
 export const TOURS_FETCH_SUCCESS = 'TOURS_FETCH_SUCCESS';
 export const DAY_PICKED = 'DAY_PICKED';
 export const SHOW_UPCOMING_TOURS = 'SHOW_UPCOMING_TOURS';
+export const SORT_TOURS_BY = 'SORT_TOURS_BY';
 
 export function toursAreLoading(bool) {
     return {
@@ -41,7 +41,13 @@ export function showOnlyUpcomingTours() {
     };
 }
 
-// const getTours = () => {};
+export function sortToursBy(sortBy) {
+    return {
+        type: 'SORT_TOURS_BY',
+        sortBy
+    };
+}
+
 export function getTours() {
     const tourApiURL = configs.GET_TOURS_API_URL;
     return (dispatch, getState) => {

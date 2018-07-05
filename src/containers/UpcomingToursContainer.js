@@ -5,11 +5,9 @@ import { bindActionCreators } from 'redux';
 import { showOnlyUpcomingTours } from '../actions/actionTypes';
 import UpcomingToursFilter from '../components/UpcomingToursFilter';
 
-
 class UpcomingToursContainer extends Component {
     
 }
-
 
 const mapStateToProps = (state) => ({
     isUpcomingFilterApplied: state.tourReducer.isUpcomingFilterApplied || false

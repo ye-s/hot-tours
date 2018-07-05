@@ -4,33 +4,42 @@ import createStore from './store';
 
 import FiltersContainer from './containers/FiltersContainer';
 import ToursListContainer from './containers/ToursListContainer';
-import SortBy from './components/SortBy';
+// import SortByDropdownContainer from './containers/SortByDropdownContainer';
 
-import style from 'styled-components';
+import style, { injectGlobal } from 'styled-components';
 
-import logo from './logo.svg';
-import './App.css';
-
+injectGlobal`
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+    }  
+`;
 const ToursSectionWrapper = style.div`
     display: flex;
     flex-direction: column;
     @media all and (min-width: 505px) {
+        position: relative;
         flex-direction: column;
     }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 755px) {
+        position: relative;
         flex-direction: row;
     }
     @media all and (min-width: 1138px) {
+        position: relative;
         flex-direction: row;
     }
 `;
 
-const ContenWrapper = style.div`
+const ContentWrapper = style.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     @media all and (min-width: 505px) {
-        margin-top: 5%;
+        margin-top: 12%;
     }
 `;
 
@@ -38,13 +47,13 @@ class App extends Component {
     render() {
         return (
             <Provider store={createStore()}>
-                <ContenWrapper>
+                <ContentWrapper>
                     <ToursSectionWrapper>
-                        <SortBy/>
-                        <FiltersContainer></FiltersContainer>
-                        <ToursListContainer></ToursListContainer>
+                        {/* <SortByDropdownContainer/> */}
+                        <FiltersContainer/>
+                        <ToursListContainer/>
                     </ToursSectionWrapper>
-                </ContenWrapper>
+                </ContentWrapper>
             </Provider>
         );
     }

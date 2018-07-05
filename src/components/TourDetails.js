@@ -1,6 +1,4 @@
 import React from 'react';
-//import MeasureUnit from './MeasureUnit';
-
 import style from 'styled-components';
 
 const TourDetailsWrapper = style.div`
@@ -9,12 +7,13 @@ const TourDetailsWrapper = style.div`
     box-sizing: border-box;
     order: 3;
     @media all and (min-width: 505px) {
+        border-top: none;
         max-width: 238px;
         height: 238px;
         border-left: 1px solid #f2f2f2;
         order: 2;
     }
-    @media all and (min-width: 740px) {
+    @media all and (min-width: 755px) {
         max-width: 238px;
         order: 2;
     }
@@ -82,13 +81,11 @@ const DatesBlock = style.div`
 `;
 
 const SeatsBlock = style(DatesBlock)`
-    //margin-left: 30vw;
     align-items: flex-end;
     div {
         text-align: right;
     }
     @media all and (min-width: 505px) {
-        // margin-left: 58px;
         margin-right: 14px;
     }
 `;
@@ -101,8 +98,8 @@ const Button = style.div`
     background: #009fcd;
     color: #fff;
     border: none;
-    margin: 4vh auto 4vh auto;;
-    width: 80vw;
+    margin: 4vh auto 4vh auto;
+    width: 80%;
     height: 32px;
     font-size: 14px;
     line-height: 30px;
@@ -110,13 +107,11 @@ const Button = style.div`
     box-shadow:none;
     border-color:transparent;
     text-align: center;
+    cursor: pointer;
     @media all and (min-width: 505px) {
         margin: 27px auto;
         width: 200px;
     }
-    // @media all and (min-width: 1100px) {
-    //     width: 200px;
-    // }
 `;
 
 const TourDetails = (props) =>  {

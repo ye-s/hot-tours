@@ -7,21 +7,15 @@ const Star = style.span`
     &.empty-star {
         color: transparent;
     }
-`
-
-// const EmptyStar = style.div`
-//     color: transparent;
-// `
+`;
 
 const RatingWrapper = style.div`
     position: absolute;
     bottom: 10px;
     left: 10px;
-`
+`;
 
 export default class Rating extends Component {
-
-// const Rating = (props) =>  {
 
     countStarts(rating) {
         let starRating = [];
@@ -44,11 +38,6 @@ export default class Rating extends Component {
                         <Star key={i} className="fa fa-star-o"/>
                     );
                 }
-                // if (emptyStar) {
-                //     starRating.push(
-                //         <Star key={i} className="fa fa-star empty-star"/>
-                //     );
-                // }
             }
         }
         return starRating;
@@ -60,12 +49,6 @@ export default class Rating extends Component {
         return (
             <RatingWrapper>
                 { stars }
-                {// list.map(function(tourData, index){
-                //             console.log(tourData.images[0].url);
-                //             return <Tour key={index} tourData={tourData}></Tour>;
-                //         })}
-                // <Star className=""/>
-            }
             </RatingWrapper>
         );
     };

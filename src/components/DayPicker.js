@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import style from 'styled-components';
-// export default function Hello() {
-//   return <DayPicker />;
-// }
 
 const DayPickerWrapper = style.div`
     height: 100%;
@@ -35,10 +32,8 @@ const DayPickerWrapper = style.div`
         height: 276px;
         width: 260px;
         .DayPicker-Months {
-            // width: 90%;
             margin-left: 4px;
         }
-        //margin-right: 16px;
     }
 `;
 
@@ -62,7 +57,7 @@ const Calendar = style.div`
     justify-content: center;
 `;
 
-export default class CalendarDayPicker extends React.Component {
+export default class CalendarDayPicker extends Component {
     state = {
         selectedDay: undefined
     }
@@ -90,16 +85,3 @@ export default class CalendarDayPicker extends React.Component {
         );
     }
 }
-
-// const mapStateToProps = (state) => ({
-//     day: state.tourReducer.toursList
-// });
-
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//     // getTours: () => {
-//     //     dispatch(getTours());
-//     // }
-//     return bindActionCreators({
-//         getTours
-//     }, dispatch);
-// };

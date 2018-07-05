@@ -1,31 +1,17 @@
 import React from 'react';
-//import MeasureUnit from './MeasureUnit';
 import Rating from './Rating';
 
+import heart from '../assets/heart.svg';
 import style from 'styled-components';
 
-// const ImageWrapper = style.div`
-//     // border: 1px solid blue;
-//     // height: 436px;
-//     // width: 100%;
-//     // box-sizing: border-box;
-//     @media all and (min-width: 505px) {
-//         // max-width: 260px;
-//         // margin-right: 16px;
-//     }
-// `
 const TourImageWrapper = style.div`
     position: relative;
+    width: 100%;
     order: 1;
     @media all and (min-width: 505px) {
         height: 238px;
         width: 238px;
     }
-    // @media all and (min-width: 1138px) {
-    //     height: 238px;
-    //     width: 238px;
-    //     // margin-right: 16px;
-    // }
 `;
 
 const DiscountWrapper = style.div`
@@ -40,8 +26,8 @@ const DiscountWrapper = style.div`
         color: #fff;
         font-size: 14px;
         transform: rotate(45deg);
-        // margin-left: 17px;
-        // margin-top: -6px;
+        margin-left: -4px;
+        margin-top: 0px;
 
         width: 23px;
         padding-left: 19px;
@@ -49,6 +35,9 @@ const DiscountWrapper = style.div`
         font-size: 14px;
         line-height: 10px;
         margin-top: 1px;
+        @media all and (min-width: 505px) {
+            margin-left: 0;
+        }
     }
 `;
 
@@ -70,9 +59,22 @@ const Image = style.div`
     @media all and (min-width: 505px) {
         height: 238px;
         width: 238px;
-        // margin-right: 16px;
     }
 `;
+
+const HeartIcon = style.img`
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    bottom: 20vh;
+    left: 45vw;
+    @media all and (min-width: 505px) {
+        width: 30px;
+        height: 30px;
+        bottom: 100px;
+        left: 104px;
+    }
+`
 
 const TourImage = (props) =>  {
     return (
@@ -82,7 +84,8 @@ const TourImage = (props) =>  {
                 ? <DiscountWrapper><div>-{props.discount}</div></DiscountWrapper>
                 : null
             }
-            <Image background={props.background}></Image>
+            <Image background={props.background}/>
+            <HeartIcon src={heart}/>
             <Rating rating={props.rating} />
             <Reviews>{props.reviews} reviews</Reviews>
         </TourImageWrapper>

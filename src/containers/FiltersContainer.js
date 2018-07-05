@@ -3,12 +3,13 @@ import DayPickerContainer from './DayPickerContainer';
 
 import style from 'styled-components';
 import UpcomingToursContainer from './UpcomingToursContainer';
+import SortByDropdownContainer from './SortByDropdownContainer';
 
 const FiltersWrapper = style.div`
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     @media all and (min-width: 505px) {
-        max-width: 260px;
+        width: 260px;
         margin-right: 16px;
     }
 `;
@@ -34,19 +35,18 @@ const FiltersTitle = style.div`
         margin-bottom: 9px;
         span {
             text-align: left;
-            // margin: 17px 0 14px 24px;
         }
     }
 `;
 
 export default class FiltersContainer extends Component {
     render () {
-        const showFiltered = this.state ? (this.state.isUpcomingFilterApplied || false) : false;
         return (
             <FiltersWrapper>
                 <FiltersTitle><span>Filter by:</span></FiltersTitle>
                 <DayPickerContainer/>
                 <UpcomingToursContainer/>
+                <SortByDropdownContainer/>
             </FiltersWrapper>
         );
     }
